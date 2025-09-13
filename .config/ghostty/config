@@ -1,3 +1,6 @@
+# ----------------------------------------
+# General
+# ----------------------------------------
 theme = "Poimandres"
 clipboard-trim-trailing-spaces = true
 macos-option-as-alt = true
@@ -7,38 +10,38 @@ cursor-style = bar
 macos-auto-secure-input = true
 macos-secure-input-indication = true
 
-# Icon -------
+# ----------------------------------------
+# App icon
+# ----------------------------------------
 macos-icon = custom-style
-# macos-icon-frame = chrome 
 macos-icon-ghost-color = 0f6627
 macos-icon-screen-color = 03fcca 
 
-# Font -------
+# ----------------------------------------
+# Font
+# ----------------------------------------
 font-family = "JetBrainsMono Nerd Font Mono"
-# font-family = "Papyrus"
-# adjust-cell-width = "-30%"
 font-size = 15.5
-# font-variation = wght = 700
 font-thicken = true
 font-feature = -liga
 
-# Background -------
-background-opacity = 0.9
-background-blur-radius = 50
-
-# Window -------
+# ----------------------------------------
+# Window
+# ----------------------------------------
+# --- Appearance ---
 window-padding-x = 15
 window-padding-y = 15,0
 macos-titlebar-style = hidden 
-# window-width = 180
-# window-height = 50
-window-save-state = always
 window-colorspace = display-p3
+background-opacity = 0.9
+background-blur-radius = 50
 
+# --- Behavior ---
+window-save-state = always
 fullscreen = true
 macos-non-native-fullscreen = visible-menu
 
-# Keybindings -------
+# ----------------------------------------
+# Keybindings
+# ----------------------------------------
 keybind = ctrl+k=text:\x0c
-# keybind = global:ctrl+grave_accent=toggle_quick_terminal
-
