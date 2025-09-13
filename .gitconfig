@@ -1,0 +1,37 @@
+[include]
+	path = .gitconfig-personal
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pull]
+	rebase = false
+
+[credential]
+	helper = store
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
+[commit]
+  gpgsign = true
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = hx
+	pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+	dark = true
+	line-numbers = true
+
+[fetch]
+	prune = true
