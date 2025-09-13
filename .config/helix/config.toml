@@ -1,0 +1,7 @@
+theme = 'poimandres-custom'
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false

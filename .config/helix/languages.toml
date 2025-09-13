@@ -1,0 +1,11 @@
+[language-server]
+
+docker-langserver = { command = "docker-langserver", args = ["--stdio"] }
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "php"
+language-servers = [ "intelephense" ]
