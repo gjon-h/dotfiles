@@ -1,0 +1,5 @@
+# Automatically set up a .nvmrc file
+set_nvmrc() {
+    echo $(nvm current) > .nvmrc
+    echo "Created .nvmrc with Node version $(nvm current)"
+}

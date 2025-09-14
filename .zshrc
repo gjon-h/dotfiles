@@ -8,31 +8,15 @@
 #  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# export PATH=/usr/local/bin:$PATH
-# export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
-# export PATH=$PATH:$(brew --prefix)/share/python
-export PATH=${PATH}:/usr/local/mysql/bin
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-# Postgres
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
-
-# Lazygit
-export XDG_CONFIG_HOME="$HOME/.config"
-
-# PHP
-export PATH="/Users/gjonhajdari/.config/herd-lite/bin:$PATH"
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# export MANPAGER="nvim +Man!"
-export MANPAGER="hx"
+# Source additional configuration files
+source "${ZDOTDIR:-$HOME}/.zshrc_path_additions"
+source "${ZDOTDIR:-$HOME}/.zshrc_apps_setup"
+source "${ZDOTDIR:-$HOME}/.zshrc_keybindings"
+source "${ZDOTDIR:-$HOME}/.zshrc_functions"
+source "${ZDOTDIR:-$HOME}/.zshrc_aliases"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -139,48 +123,7 @@ source $ZSH/oh-my-zsh.sh
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
-# Carapace
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
-source <(carapace _carapace)
-
-# bun completions
-[ -s "/Users/gjonhajdari/.bun/_bun" ] && source "/Users/gjonhajdari/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# custom aliases
-alias bup="brew update && brew upgrade --greedy"
-alias bcl="brew cleanup --prune=all"
-# alias python="python3"
-# alias dotfiles="git --git-dir=/Users/gjonhajdari/.dotfiles --work-tree=/Users/gjonhajdari"
-# alias glo='git --no-pager log --oneline --decorate'
-alias glol='git --no-pager log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'
-alias vim="nvim"
-alias c="clear"
-alias lg="lazygit"
-
-eval "$(zoxide init --cmd cd zsh)"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-# history setup
-HISTFILE=$HOME/.zhistory
-SAVEHIST=1000
-HISTSIZE=999
-setopt share_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_verify
-# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
-# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # autoload -Uz vcs_info
 # precmd() { vcs_info }
@@ -188,46 +131,5 @@ bindkey "^[[B" history-search-forward
 # setopt PROMPT_SUBST
 # PROMPT='%F{magenta}chon%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%F{yellow}❱%f '
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Function to automatically set up a .nvmrc file
-set_nvmrc() {
-  echo $(nvm current) > .nvmrc
-  echo "Created .nvmrc with Node version $(nvm current)"
-}
-
-# Set local git config
-function gitlocal() {
-  if [[ "$1" == "work" ]]; then
-    git config --local user.name "Gjon Hajdari"
-    git config --local user.email "gjon@kutia.net"
-    git config --local user.signingkey "EF8FAC0622D8585DB57F7EAA7B72B8852BAD6209"
-    echo "Switched to WORK Git profile."
-  elif [[ "$1" == "personal" ]]; then
-    git config --local user.name "Gjon Hajdari"
-    git config --local user.email "gjon.hajdari@student.uni-pr.edu"
-    git config --local user.signingkey "8A3857EDD5B2319074B8AE5038265B7F467A964C"
-    echo "Switched to PERSONAL Git profile."
-  else
-    echo "Usage: gitlocal [work|personal]"
-  fi
-}
-
-export GPG_TTY=$(tty)
-export PATH="$HOME/.pgenv/bin:$HOME/.pgenv/pgsql/bin:$PATH"
-export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig"
-export LDFLAGS="-L$(brew --prefix icu4c)/lib"
-export CPPFLAGS="-I$(brew --prefix icu4c)/include"
-export PATH=$PATH:$HOME/go/bin
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
 # Starship prompt
 eval "$(starship init zsh)"
-export PATH="/Users/gjonhajdari/.config/herd-lite/bin:$PATH"
-export PHP_INI_SCAN_DIR="/Users/gjonhajdari/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"

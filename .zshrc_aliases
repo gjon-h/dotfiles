@@ -1,0 +1,11 @@
+# Homebrew
+alias bup="brew update && brew upgrade --greedy"
+alias bcl="brew cleanup --prune=all"
+
+# Git
+alias glol='git --no-pager log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'
+
+# Other
+alias vim="nvim"
+alias lg="lazygit"
+alias c="clear"

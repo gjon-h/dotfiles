@@ -1,0 +1,36 @@
+# System
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# MySQL
+export PATH=${PATH}:/usr/local/mysql/bin
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# PostgreSQL
+# - 17
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
+# - 16
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+# - pgsql
+export PATH="$HOME/.pgenv/bin:$HOME/.pgenv/pgsql/bin:$PATH"
+
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Lazygit
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# PHP
+export PATH="/Users/gjonhajdari/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/gjonhajdari/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Go
+export PATH=$PATH:$HOME/go/bin

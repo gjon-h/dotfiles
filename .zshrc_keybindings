@@ -1,0 +1,3 @@
+# Navigate command history with up/down arrows based on current input
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
