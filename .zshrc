@@ -12,11 +12,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Source additional configuration files
-source ".zsh/.zshrc_path_additions"
-source ".zsh/.zshrc_apps_setup"
-source ".zsh/.zshrc_keybindings"
-source ".zsh/.zshrc_functions"
-source ".zsh/.zshrc_aliases"
+source "$HOME/.zsh/.zshrc_path_additions"
+source "$HOME/.zsh/.zshrc_apps_setup"
+source "$HOME/.zsh/.zshrc_keybindings"
+source "$HOME/.zsh/.zshrc_functions"
+source "$HOME/.zsh/.zshrc_aliases"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
