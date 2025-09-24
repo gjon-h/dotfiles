@@ -27,6 +27,9 @@ export CPPFLAGS="-I$(brew --prefix icu4c)/include"
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
+# Atuin
+. "$HOME/.atuin/bin/env"
+
 # Custom manpager
 # export MANPAGER="nvim +Man!"
 export MANPAGER="hx"

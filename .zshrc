@@ -131,5 +131,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # setopt PROMPT_SUBST
 # PROMPT='%F{magenta}chon%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%F{yellow}❱%f '
 
-# Starship prompt
+# Starship prompt & atuin
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
