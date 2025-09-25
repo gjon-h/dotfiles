@@ -1,3 +1,4 @@
 inherits = "poimandres"
 
 "ui.background" = { }
+"ui.cursorline.primary" = "#506477"

@@ -6,6 +6,9 @@ insert = "bar"
 [editor.file-picker]
 hidden = false
 
+[editor]
+cursorline = true
+
 [keys.normal]
 "A-j" = [
   "extend_to_line_bounds",
