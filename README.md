@@ -19,12 +19,8 @@ brew install stow  # macOS
 Then run the following commands:
 
 ```bash
-# create a directory for the dotfiles
-mkdir ~/.dotfiles
-cd ~/.dotfiles
-
 # clone the repo
-git clone git@github.com:gjonhajdari/dotfiles.git .
+git clone git@github.com:gjonhajdari/dotfiles.git .dotfiles
 
 # set up symlinks
 stow .
