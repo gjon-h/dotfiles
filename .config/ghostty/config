@@ -21,7 +21,7 @@ macos-icon-screen-color = 03fcca
 # Font
 # ----------------------------------------
 font-family = "JetBrainsMono Nerd Font Mono"
-font-size = 15.5
+font-size = 16
 font-thicken = true
 font-feature = -liga
 adjust-cell-height = 15%
