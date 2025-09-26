@@ -1,6 +1,9 @@
 # System
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Homebrew
+export PATH=$PATH:/opt/homebrew/bin
+
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
