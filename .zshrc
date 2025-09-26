@@ -10,6 +10,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Path to the oh-my-zsh dumpfile directory
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 # Source additional configuration files
 source "$HOME/.zsh/.zshrc_path_additions"
