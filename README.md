@@ -20,7 +20,7 @@ Then run the following commands:
 
 ```bash
 # clone the repo
-git clone git@github.com:gjonhajdari/dotfiles.git .dotfiles
+git clone git@github.com:gjonhajdari/dotfiles.git ~/.dotfiles
 
 # set up symlinks
 stow .
