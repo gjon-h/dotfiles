@@ -1,0 +1,16 @@
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+    font-family: 'JetBrainsMono Nerd Font Mono', monospace !important;
+}
+
+.explorer-item-edited {
+    font-family: 'JetBrainsMono Nerd Font Mono' !important;
+}
+
+.search-label {
+    font-family: 'JetBrainsMono Nerd Font Mono' !important;
+}
+
+.quick-input-filter .monaco-inputbox {
+    font-family: 'JetBrainsMono Nerd Font Mono' !important;
+}
