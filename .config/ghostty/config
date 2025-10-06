@@ -14,8 +14,8 @@ macos-secure-input-indication = true
 # App icon
 # ----------------------------------------
 macos-icon = custom-style
-macos-icon-ghost-color = 0f6627
-macos-icon-screen-color = 03fcca 
+macos-icon-ghost-color = #0f6627
+macos-icon-screen-color = #03fcca
 
 # ----------------------------------------
 # Font
