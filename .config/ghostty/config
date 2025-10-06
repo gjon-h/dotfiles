@@ -20,10 +20,11 @@ macos-icon-screen-color = 03fcca
 # ----------------------------------------
 # Font
 # ----------------------------------------
-font-family = "JetBrainsMono Nerd Font Mono"
+font-family = "GeistMono Nerd Font Mono"
+font-style = "Medium"
 font-size = 16
 font-thicken = true
-font-feature = -liga
+font-feature = +liga
 adjust-cell-height = 15%
 
 # ----------------------------------------
