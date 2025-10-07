@@ -23,7 +23,6 @@ macos-icon-screen-color = #03fcca
 font-family = "GeistMono Nerd Font Mono"
 font-style = "Medium"
 font-size = 16
-font-thicken = true
 font-feature = +liga
 adjust-cell-height = 20%
 
