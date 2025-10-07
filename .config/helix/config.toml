@@ -1,13 +1,20 @@
 theme = 'poimandres-custom'
 
+[editor]
+cursorline = true
+
 [editor.cursor-shape]
 insert = "bar"
 
 [editor.file-picker]
 hidden = false
 
-[editor]
-cursorline = true
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
 
 [keys.normal]
 "A-j" = [
@@ -17,14 +24,15 @@ cursorline = true
   "select_mode",
   "goto_line_start",
   "normal_mode",
-] # Move line(s) down
+] # Move line(s) down - Normal Mode
+
 "A-k" = [
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_up",
   "paste_before",
   "flip_selections",
-] # Move line(s) up
+] # Move line(s) up - Normal Mode
 
 [keys.select]
 "A-j" = [
@@ -34,11 +42,11 @@ cursorline = true
   "select_mode",
   "goto_line_start",
   "normal_mode",
-] # Move line(s) down - select mode
+] # Move line(s) down - Select Mode
 "A-k" = [
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_up",
   "paste_before",
   "flip_selections",
-] # Move line(s) up - select mode
+] # Move line(s) up - Select Mode
