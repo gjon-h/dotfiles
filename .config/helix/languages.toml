@@ -1,5 +1,4 @@
 [language-server]
-
 docker-langserver = { command = "docker-langserver", args = ["--stdio"] }
 
 [[language]]
