@@ -2,6 +2,7 @@ theme = "poimandres-custom"
 
 [editor]
 cursorline = true
+bufferline = "always"
 
 [editor.statusline]
 mode.normal = "NORMAL"
