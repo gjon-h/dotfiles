@@ -1,10 +1,103 @@
-[language-server]
-docker-langserver = { command = "docker-langserver", args = ["--stdio"] }
+# ----------------------------------------
+# Language Server Definitions
+# ----------------------------------------
+
+# TypeScript/JavaScript Language Server
+# ----------------------------------------
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+# HTML, CSS, and JSON (provided by a single package)
+# ----------------------------------------
+[language-server.vscode-html-language-server]
+command = "vscode-html-language-server"
+args = ["--stdio"]
+
+[language-server.vscode-css-language-server]
+command = "vscode-css-language-server"
+args = ["--stdio"]
+
+[language-server.vscode-json-language-server]
+command = "vscode-json-language-server"
+args = ["--stdio"]
+
+# Docker Language Server
+# ----------------------------------------
+[language-server.docker-langserver]
+command = "docker-langserver"
+args = ["--stdio"]
+
+[language-server.compose-language-service]
+command = "compose-language-service"
+args = ["--stdio"]
+
+# YAML Language Server
+# ----------------------------------------
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+args = ["--stdio"]
+
+# PHP Language Server
+# ----------------------------------------
+[language-server.intelephense]
+command = "intelephense"
+args = ["--stdio"]
+
+# Other utilities
+# ----------------------------------------
+[language-server.bash-language-server]
+command = "bash-language-server"
+args = ["start"]
+
+# ----------------------------------------
+# Language configurations (mapping languages to LSP/formatter)
+# ----------------------------------------
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "css"] }
+
+[[language]]
+name = "json"
+language-servers = [ "vscode-json-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "php"
+language-servers = [ "intelephense" ]
+auto-format = true
 
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
-name = "php"
-language-servers = [ "intelephense" ]
+name = "dockerfile"
+language-servers = [ "docker-langserver" ]
+
+[[language]]
+name = "yaml"
+language-servers = [ "compose-language-service", "yaml-language-server" ] 
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
