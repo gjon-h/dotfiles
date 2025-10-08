@@ -14,14 +14,14 @@ NPM_PACKAGES=(
 )
 
 # --- Installation Logic ---
-echo "Starting global npm package installation..."
-echo "Installing ${#NPM_PACKAGES[@]} packages globally..."
+echo "Starting global LSPs installation..."
+echo "Installing ${#NPM_PACKAGES[@]} LSP packages globally..."
 
 # Install all packages in a single command for efficiency
 npm install -g "${NPM_PACKAGES[@]}"
 
 if [ $? -eq 0 ]; then
-    echo "✅ Global npm packages installed successfully."
+    echo "✅ Global LSPs installed successfully."
 else
     echo "❌ An error occurred during global npm package installation." >&2
 fi
