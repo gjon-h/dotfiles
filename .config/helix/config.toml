@@ -1,7 +1,12 @@
-theme = 'poimandres-custom'
+theme = "poimandres-custom"
 
 [editor]
 cursorline = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [editor.cursor-shape]
 insert = "bar"
