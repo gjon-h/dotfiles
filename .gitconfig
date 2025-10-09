@@ -35,3 +35,9 @@
 
 [fetch]
 	prune = true
+
+[merge]
+tool = vscode
+
+[mergetool "vscode"]
+cmd = "code --wait $MERGED"
