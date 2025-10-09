@@ -3,7 +3,6 @@ git:
   paging:
     colorArg: always
     pager: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
-    # pager: delta --dark --paging=never
   overrideGpg: true
   localBranchSortOrder: recency
 
@@ -11,3 +10,14 @@ keybinding:
   commits:
     moveDownCommit: "\u003cc-d\u003e" # move down
     moveUpCommit: "\u003cc-u\u003e" # move up
+
+gui:
+  theme:
+    selectedLineBgColor:
+      - "#42675A"
+    cherryPickedCommitBgColor:
+      - "#5DE4C7"
+    cherryPickedCommitFgColor:
+      - black
+    optionsTextColor:
+      - "#5DE4C7"
