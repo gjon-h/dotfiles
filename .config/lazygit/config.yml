@@ -21,3 +21,13 @@ gui:
       - black
     optionsTextColor:
       - "#5DE4C7"
+  nerdFontsVersion: "3"
+  commitHashLength: 5
+  filterMode: "fuzzy"
+  spinner:
+    frames:
+      - "◐"
+      - "◓"
+      - "◑"
+      - "◒"
+    rate: 67
