@@ -12,6 +12,9 @@ keybinding:
     moveUpCommit: "\u003cc-u\u003e" # move up
 
 gui:
+  nerdFontsVersion: "3"
+  commitHashLength: 5
+  filterMode: "fuzzy"
   theme:
     selectedLineBgColor:
       - "#42675A"
@@ -21,9 +24,6 @@ gui:
       - black
     optionsTextColor:
       - "#5DE4C7"
-  nerdFontsVersion: "3"
-  commitHashLength: 5
-  filterMode: "fuzzy"
   spinner:
     frames:
       - "◐"
