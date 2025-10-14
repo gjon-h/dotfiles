@@ -24,6 +24,9 @@ gui:
       - black
     optionsTextColor:
       - "#5DE4C7"
+    inactiveBorderColor:
+      - "#4F6477"
+
   spinner:
     frames:
       - "◐"
