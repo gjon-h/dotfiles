@@ -1,16 +1,14 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   overrideGpg: true
   localBranchSortOrder: recency
-
 keybinding:
   commits:
-    moveDownCommit: "\u003cc-d\u003e" # move down
-    moveUpCommit: "\u003cc-u\u003e" # move up
-
+    moveDownCommit: "<c-d>" # move down
+    moveUpCommit: "<c-u>" # move up
 gui:
   nerdFontsVersion: "3"
   commitHashLength: 5
@@ -26,7 +24,6 @@ gui:
       - "#5DE4C7"
     inactiveBorderColor:
       - "#4F6477"
-
   spinner:
     frames:
       - "◐"
