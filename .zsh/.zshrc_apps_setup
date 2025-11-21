@@ -30,9 +30,10 @@ eval "$(zoxide init --cmd cd zsh)"
 # Atuin
 . "$HOME/.atuin/bin/env"
 
-# Custom manpager
+# Helix
 # export MANPAGER="nvim +Man!"
 export MANPAGER="hx"
+export EDITOR="hx"
 
 # Commmand history
 HISTFILE=$HOME/.zhistory        # location of the history file
