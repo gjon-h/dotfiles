@@ -35,6 +35,9 @@ eval "$(zoxide init --cmd cd zsh)"
 export MANPAGER="hx"
 export EDITOR="hx"
 
+# Tealdeer
+export TEALDEER_CONFIG_DIR="${HOME}/.config/tealdeer/"
+
 # Commmand history
 HISTFILE=$HOME/.zhistory        # location of the history file
 SAVEHIST=1000                   # number of history entries to save to the history file
