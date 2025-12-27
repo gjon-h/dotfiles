@@ -18,8 +18,10 @@ capstone
 carapace
 cbonsai
 certifi
+cffi
 cmatrix
 composer
+cryptography
 curl
 cyrus-sasl
 dav1d
@@ -54,6 +56,7 @@ highway
 htop
 httpd
 icu4c@77
+icu4c@78
 imath
 isl
 jpeg-turbo
@@ -145,7 +148,8 @@ podman
 postgresql@17
 powerlevel10k
 prettier
-protobuf@29
+protobuf
+pycparser
 pydantic
 pyenv
 python-matplotlib
@@ -172,9 +176,11 @@ starship
 stow
 swig
 taplo
+tealdeer
 tidy-html5
 tmux
 tree-sitter
+tree-sitter@0.25
 unbound
 unibilium
 unixodbc
@@ -186,6 +192,7 @@ woff2
 xorgproto
 xz
 yarn
+yazi
 yyjson
 zig
 zlib

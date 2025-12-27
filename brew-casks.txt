@@ -1,5 +1,7 @@
-aldente
+affinity
+batfi
 betterdisplay
+discord
 disk-drill
 docker-desktop
 figma
@@ -24,6 +26,7 @@ pearcleaner
 phpstorm
 playcover-community
 podman-desktop
+protonvpn
 raycast
 rectangle
 spotify
