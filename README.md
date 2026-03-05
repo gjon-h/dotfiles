@@ -25,3 +25,16 @@ git clone git@github.com:gjonhajdari/dotfiles.git ~/.dotfiles
 # set up symlinks
 stow .
 ```
+
+## Package & LSP Sync
+
+```bash
+# save installed packages
+./dump_pgks.sh
+
+# install packages
+./install.sh
+
+# setup LSPs for helix
+./lsp-setup.sh
+```
