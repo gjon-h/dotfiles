@@ -1,4 +1,5 @@
 abseil
+ada-url
 aom
 apr
 apr-util
@@ -31,6 +32,7 @@ docker-compose
 dwarfutils
 fastfetch
 figlet
+fmt
 fontconfig
 fontforge
 freetds
@@ -51,6 +53,7 @@ gnupg
 gnutls
 graphite2
 harfbuzz
+hdrhistogram_c
 helix
 highway
 htop
@@ -65,12 +68,14 @@ krb5
 lazygit
 libassuan
 libavif
+libdatrie
 libdeflate
 libev
 libevent
 libgcrypt
 libgit2
 libgpg-error
+libiconv
 libidn2
 libimagequant
 libksba
@@ -78,6 +83,7 @@ libmpc
 libnghttp2
 libnghttp3
 libngtcp2
+libomp
 libpng
 libpq
 libraqm
@@ -85,6 +91,7 @@ libsodium
 libspiro
 libssh2
 libtasn1
+libthai
 libtiff
 libtool
 libuninameslist
@@ -102,6 +109,7 @@ libyaml
 libzip
 little-cms2
 lld@20
+llhttp
 llvm@20
 lolcat
 lpeg
@@ -135,7 +143,6 @@ p11-kit
 pandoc
 pango
 parallel
-pcre
 pcre2
 php
 pillow
@@ -144,7 +151,6 @@ pinentry-mac
 pipx
 pixman
 pkgconf
-podman
 postgresql@17
 powerlevel10k
 prettier
@@ -196,6 +202,7 @@ yazi
 yyjson
 zig
 zlib
+zlib-ng-compat
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting

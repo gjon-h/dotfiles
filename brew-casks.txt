@@ -1,5 +1,5 @@
 affinity
-batfi
+aldente
 betterdisplay
 discord
 disk-drill
@@ -25,7 +25,6 @@ oracle-jdk
 pearcleaner
 phpstorm
 playcover-community
-podman-desktop
 protonvpn
 raycast
 rectangle
