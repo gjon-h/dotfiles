@@ -39,7 +39,7 @@ background-blur-radius = 50
 
 # --- Behavior ---
 window-save-state = always
-fullscreen = true
+# fullscreen = true
 macos-non-native-fullscreen = visible-menu
 
 # ----------------------------------------
