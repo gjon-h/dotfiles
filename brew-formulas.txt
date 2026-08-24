@@ -15,7 +15,6 @@ bun
 c-ares
 ca-certificates
 cairo
-capstone
 carapace
 cbonsai
 certifi
@@ -27,7 +26,6 @@ curl
 dav1d
 docker
 docker-compose
-duti
 dwarfutils
 fastfetch
 figlet
@@ -60,11 +58,14 @@ htop
 httpd
 icu4c@77
 icu4c@78
+imagemagick
 imath
 isl
 jansson
+jemalloc
 jpeg-turbo
 jpeg-xl
+json-c
 krb5
 lame
 lazygit
@@ -73,6 +74,7 @@ libassuan
 libavif
 libbluray
 libdatrie
+libde265
 libdeflate
 libdvdcss
 libdvdnav
@@ -83,6 +85,7 @@ libffi
 libgcrypt
 libgit2
 libgpg-error
+libheif
 libidn2
 libimagequant
 libksba
@@ -94,6 +97,7 @@ libogg
 libomp
 libpng
 libpq
+libpsl
 libraqm
 libsodium
 libspiro
@@ -125,7 +129,6 @@ llhttp
 llvm@21
 lolcat
 lpeg
-lua
 luajit
 luv
 lz4
@@ -137,6 +140,7 @@ mongodb-database-tools
 mongodb@8.4
 mpdecimal
 mpfr
+mpg123
 mysql
 nbytes
 ncurses
@@ -148,6 +152,7 @@ npth
 numpy
 oniguruma
 openblas
+opencode
 openexr
 openjpeg
 openjph
@@ -179,6 +184,7 @@ python@3.11
 python@3.13
 python@3.14
 qhull
+qwen-code
 rbenv
 readline
 ripgrep
@@ -203,7 +209,6 @@ theora
 tidy-html5
 tmux
 tree-sitter
-unbound
 unibilium
 unixodbc
 utf8proc
@@ -212,6 +217,7 @@ webp
 wget
 woff2
 x264
+x265
 xorgproto
 xz
 yarn
