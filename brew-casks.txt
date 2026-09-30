@@ -1,7 +1,6 @@
 affinity
 aldente
 antigravity-cli
-blender
 codex
 disk-drill
 docker-desktop
@@ -12,13 +11,12 @@ font-geist
 font-geist-mono-nerd-font
 font-meslo-lg-nerd-font
 ghostty
+google-chrome
 horos
 iina
 jordanbaird-ice
 knockknock
-latest
 logi-options+
-mongodb-compass
 monitorcontrol
 mos
 notion
@@ -26,7 +24,6 @@ obsidian
 oracle-jdk
 pdf-expert
 phpstorm
-protonvpn
 raycast
 rectangle
 shottr
@@ -34,8 +31,8 @@ spotify
 steam
 tableplus
 transmission
+upscayl
 visual-studio-code
 vorssaint
 whatsapp
 zen
-zen-browser
