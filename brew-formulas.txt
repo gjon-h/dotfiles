@@ -14,6 +14,7 @@ bun
 c-ares
 ca-certificates
 cairo
+capstone
 carapace
 cbonsai
 certifi
@@ -40,6 +41,7 @@ gcc
 gd
 gettext
 gh
+ghostscript
 giflib
 git
 git-delta
@@ -57,10 +59,12 @@ highway
 htop
 httpd
 icu4c@78
+icu4c@79
 imagemagick
 imath
 isl
 jansson
+jbig2dec
 jemalloc
 jpeg-turbo
 jpeg-xl
@@ -68,10 +72,14 @@ json-c
 krb5
 lame
 lazygit
+leptonica
+libarchive
 libass
 libassuan
 libavif
+libb2
 libbluray
+libdatrie
 libde265
 libdeflate
 libdvdcss
@@ -84,8 +92,11 @@ libgcrypt
 libgit2
 libgpg-error
 libheif
+libidn
 libidn2
 libimagequant
+libimobiledevice
+libimobiledevice-glue
 libksba
 libmpc
 libnghttp2
@@ -93,6 +104,7 @@ libnghttp3
 libngtcp2
 libogg
 libomp
+libplist
 libpng
 libpq
 libpsl
@@ -100,12 +112,15 @@ libraqm
 libsodium
 libssh2
 libtasn1
+libtatsu
+libthai
 libtiff
 libtool
 libudfread
 libunibreak
 libunistring
 libusb
+libusbmuxd
 libuv
 libvmaf
 libvorbis
@@ -119,9 +134,9 @@ libxrender
 libyaml
 libzip
 little-cms2
-lld@21
+lld@22
 llhttp
-llvm@21
+llvm@22
 lolcat
 lpeg
 luajit
@@ -130,6 +145,7 @@ lz4
 lzo
 m4
 merve
+mole
 mongodb-community
 mongodb-database-tools
 mongodb@8.4
@@ -158,6 +174,7 @@ openssl@4
 opus
 p11-kit
 pandoc
+pango
 parallel
 pcre2
 php
@@ -177,7 +194,7 @@ pyenv
 python-matplotlib
 python@3.11
 python@3.13
-python@3.14
+python@3.15
 qhull
 rbenv
 readline
@@ -189,6 +206,7 @@ scdoc
 semgrep
 simdjson
 simdutf
+siteone-crawler
 snappy
 speex
 sqlite
@@ -198,6 +216,7 @@ svt-av1
 swig
 taplo
 tealdeer
+tesseract
 theora
 tidy-html5
 tmux
